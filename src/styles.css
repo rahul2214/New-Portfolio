@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -122,4 +123,29 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Add this to your CSS file */
+
+.education-grid {
+  display: grid;
+   /* Adjust to 4 if needed */
+  gap: 20px;
+}
+
+.education-cell {
+  
+  padding: 20px;
+  
+
 }
